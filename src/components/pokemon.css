@@ -1,0 +1,81 @@
+.container-pokemon{
+    display: grid;
+
+    grid-template-columns: repeat(7,1fr);
+    width: 80%;
+    height: 100vh;
+    margin: 10px auto;
+
+   
+}
+
+.div-pokemoncard{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave ao efeito */
+    margin: 10 auto;
+    text-align: center;
+}
+
+.div-pokemoncard:hover {
+  transform: scale(1.1); /* Escala o elemento ao passar o mouse para um efeito de destaque */
+}
+
+
+/* Estilização input */
+/* Adicione estilos para os radio buttons e labels */
+
+.options {
+    display: flex;
+    align-items: center; /* Centraliza os elementos horizontalmente */
+  }
+  
+  .radio-options {
+    display: flex;
+    margin-bottom: 10px; /* Adiciona espaço entre os radio buttons e o botão */
+  }
+  
+  /* Adicione estilos para os radio buttons e labels (conforme fornecido anteriormente) */
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  
+
+input[type="radio"] {
+    display: none; /* Esconder o input padrão */
+  }
+  
+  label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px auto;
+  }
+  
+  /* Adicionar estilos para quando o radio button estiver marcado */
+  
+  input[type="radio"]:checked + label {
+    background-color: #2980b9;
+  }
+  
