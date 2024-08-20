@@ -71,6 +71,10 @@
   margin-top: 20px;
 }
 
+button{
+  background: none;
+}
+
 .pokebuttonmenos {
   background-image: url('../../public/imgs/pokeball.png');
   background-size: cover; /* Garante que a imagem cubra o botão */
