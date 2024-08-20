@@ -1,26 +1,38 @@
-.container-pokemon{
-    display: grid;
-
-    grid-template-columns: repeat(7,1fr);
-    width: 80%;
-    height: 100vh;
-    margin: 10px auto;
-
-   
+.container-pokemon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px; /* Adiciona espaço entre os itens */
+  width: 80%;
+  margin: 10px auto;
+  height: 100vh;
 }
 
-.div-pokemoncard{
-    width: 200px;
-    height: 300px;
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave ao efeito */
-    margin: 10 auto;
-    text-align: center;
+
+.div-pokemoncard {
+  width: 200px;
+  height: 350px;
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave ao efeito */
+  margin: 10px auto; /* Corrigido para centralizar */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+
 }
+
 
 .div-pokemoncard:hover {
   transform: scale(1.1); /* Escala o elemento ao passar o mouse para um efeito de destaque */
+}
+
+.card-image img {
+
+  height: auto;
+  border-bottom: 2px solid #ddd;
 }
 
 
@@ -30,7 +42,15 @@
 .options {
     display: flex;
     align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center;
+    flex-wrap: wrap;
+
   }
+
+.options > div{
+  margin: 0 15px;
+
+}
   
   .radio-options {
     display: flex;
@@ -42,7 +62,7 @@
   button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #3498db;
+
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -51,9 +71,7 @@
     margin: 0 auto;
   }
   
-  button:hover {
-    background-color: #2980b9;
-  }
+
   
   
 
@@ -79,3 +97,18 @@ input[type="radio"] {
     background-color: #2980b9;
   }
   
+  .btn-open-dex {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-open-dex:hover {
+    background: #0056b3;
+  }

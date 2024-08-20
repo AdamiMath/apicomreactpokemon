@@ -1,0 +1,53 @@
+.rotom-dex {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .rotom-dex.open {
+    transform: scale(1);
+  }
+  
+  .rotom-dex.closed {
+    transform: scale(0);
+  }
+  
+  .rotom-screen {
+    padding: 20px;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .pokemon-info {
+    text-align: center;
+  }
+  
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .btn-close-dex {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-close-dex:hover {
+    background: #c82333;
+  }
+  
